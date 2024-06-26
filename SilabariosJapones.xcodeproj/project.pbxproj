@@ -1,0 +1,825 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C4D9C98C2C1F5B7A00E35DDD /* SilabariosJaponesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D9C98B2C1F5B7A00E35DDD /* SilabariosJaponesApp.swift */; };
+		C4D9C98E2C1F5B7A00E35DDD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D9C98D2C1F5B7A00E35DDD /* ContentView.swift */; };
+		C4D9C9902C1F5B7C00E35DDD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4D9C98F2C1F5B7C00E35DDD /* Assets.xcassets */; };
+		C4D9C9932C1F5B7C00E35DDD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4D9C9922C1F5B7C00E35DDD /* Preview Assets.xcassets */; };
+		C4D9C99C2C1F5E5E00E35DDD /* Silabarios.json in Resources */ = {isa = PBXBuildFile; fileRef = C4D9C99B2C1F5E5E00E35DDD /* Silabarios.json */; };
+		C4D9C9A42C1F5F1E00E35DDD /* SilabarioViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D9C9A32C1F5F1E00E35DDD /* SilabarioViewModel.swift */; };
+		C4D9C9A62C1F5F2700E35DDD /* EjercicioSilabario.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D9C9A52C1F5F2700E35DDD /* EjercicioSilabario.swift */; };
+		C4D9C9A82C1F5F3000E35DDD /* Silaba.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D9C9A72C1F5F3000E35DDD /* Silaba.swift */; };
+		C4D9C9B22C1F634C00E35DDD /* GifLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D9C9B12C1F634C00E35DDD /* GifLoader.swift */; };
+		C4D9CA6C2C1F640A00E35DDD /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = C4D9CA6B2C1F640A00E35DDD /* logo.png */; };
+		C4D9CAC92C1F654C00E35DDD /* hiragana_tsu.gif in Resources */ = {isa = PBXBuildFile; fileRef = C4D9CA6D2C1F654A00E35DDD /* hiragana_tsu.gif */; };
+		C4D9CACA2C1F654C00E35DDD /* hiragana_ra.gif in Resources */ = {isa = PBXBuildFile; fileRef = C4D9CA6E2C1F654A00E35DDD /* hiragana_ra.gif */; };
+		C4D9CACB2C1F654C00E35DDD /* hiragana_he.gif in Resources */ = {isa = PBXBuildFile; fileRef = C4D9CA6F2C1F654A00E35DDD /* hiragana_he.gif */; };
+		C4D9CACC2C1F654C00E35DDD /* katakana_ne.gif in Resources */ = {isa = PBXBuildFile; fileRef = C4D9CA702C1F654A00E35DDD /* katakana_ne.gif */; };
+		C4D9CACD2C1F654C00E35DDD /* katakana_ru.gif in Resources */ = {isa = PBXBuildFile; fileRef = C4D9CA712C1F654A00E35DDD /* katakana_ru.gif */; };
+		C4D9CACE2C1F654C00E35DDD /* hiragana_mo.gif in Resources */ = {isa = PBXBuildFile; fileRef = C4D9CA722C1F654A00E35DDD /* hiragana_mo.gif */; };
+		C4D9CACF2C1F654C00E35DDD /* hiragana_se.gif in Resources */ = {isa = PBXBuildFile; fileRef = C4D9CA732C1F654A00E35DDD /* hiragana_se.gif */; };
+		C4D9CAD02C1F654C00E35DDD /* katakana_ke.gif in Resources */ = {isa = PBXBuildFile; fileRef = C4D9CA742C1F654A00E35DDD /* katakana_ke.gif */; };
+		C4D9CAD12C1F654C00E35DDD /* hiragana_e.gif in Resources */ = {isa = PBXBuildFile; fileRef = C4D9CA752C1F654A00E35DDD /* hiragana_e.gif */; };
+		C4D9CAD22C1F654C00E35DDD /* katakana_ro.gif in Resources */ = {isa = PBXBuildFile; fileRef = C4D9CA762C1F654A00E35DDD /* katakana_ro.gif */; };
+		C4D9CAD32C1F654C00E35DDD /* hiragana_i.gif in Resources */ = {isa = PBXBuildFile; fileRef = C4D9CA772C1F654A00E35DDD /* hiragana_i.gif */; };
+		C4D9CAD42C1F654C00E35DDD /* hiragana_no.gif in Resources */ = {isa = PBXBuildFile; fileRef = C4D9CA782C1F654A00E35DDD /* hiragana_no.gif */; };
+		C4D9CAD52C1F654C00E35DDD /* hiragana_ri.gif in Resources */ = {isa = PBXBuildFile; fileRef = C4D9CA792C1F654A00E35DDD /* hiragana_ri.gif */; };
+		C4D9CAD62C1F654C00E35DDD /* hiragana_yo.gif in Resources */ = {isa = PBXBuildFile; fileRef = C4D9CA7A2C1F654A00E35DDD /* hiragana_yo.gif */; };
+		C4D9CAD72C1F654C00E35DDD /* katakana_ma.gif in Resources */ = {isa = PBXBuildFile; fileRef = C4D9CA7B2C1F654A00E35DDD /* katakana_ma.gif */; };
+		C4D9CAD82C1F654C00E35DDD /* hiragana_ne.gif in Resources */ = {isa = PBXBuildFile; fileRef = C4D9CA7C2C1F654A00E35DDD /* hiragana_ne.gif */; };
+		C4D9CAD92C1F654C00E35DDD /* hiragana_me.gif in Resources */ = {isa = PBXBuildFile; fileRef = C4D9CA7D2C1F654A00E35DDD /* hiragana_me.gif */; };
+		C4D9CADA2C1F654C00E35DDD /* hiragana_chi.gif in Resources */ = {isa = PBXBuildFile; fileRef = C4D9CA7E2C1F654A00E35DDD /* hiragana_chi.gif */; };
+		C4D9CADB2C1F654C00E35DDD /* hiragana_to.gif in Resources */ = {isa = PBXBuildFile; fileRef = C4D9CA7F2C1F654A00E35DDD /* hiragana_to.gif */; };
+		C4D9CADC2C1F654C00E35DDD /* hiragana_ku.gif in Resources */ = {isa = PBXBuildFile; fileRef = C4D9CA802C1F654A00E35DDD /* hiragana_ku.gif */; };
+		C4D9CADD2C1F654C00E35DDD /* katakana_fu.gif in Resources */ = {isa = PBXBuildFile; fileRef = C4D9CA812C1F654A00E35DDD /* katakana_fu.gif */; };
+		C4D9CADE2C1F654C00E35DDD /* katakana_mo.gif in Resources */ = {isa = PBXBuildFile; fileRef = C4D9CA822C1F654A00E35DDD /* katakana_mo.gif */; };
+		C4D9CADF2C1F654C00E35DDD /* katakana_re.gif in Resources */ = {isa = PBXBuildFile; fileRef = C4D9CA832C1F654A00E35DDD /* katakana_re.gif */; };
+		C4D9CAE02C1F654C00E35DDD /* hiragana_ha.gif in Resources */ = {isa = PBXBuildFile; fileRef = C4D9CA842C1F654A00E35DDD /* hiragana_ha.gif */; };
+		C4D9CAE12C1F654C00E35DDD /* katakana_ku.gif in Resources */ = {isa = PBXBuildFile; fileRef = C4D9CA852C1F654A00E35DDD /* katakana_ku.gif */; };
+		C4D9CAE22C1F654C00E35DDD /* katakana_sa.gif in Resources */ = {isa = PBXBuildFile; fileRef = C4D9CA862C1F654A00E35DDD /* katakana_sa.gif */; };
+		C4D9CAE32C1F654C00E35DDD /* katakana_se.gif in Resources */ = {isa = PBXBuildFile; fileRef = C4D9CA872C1F654A00E35DDD /* katakana_se.gif */; };
+		C4D9CAE42C1F654C00E35DDD /* katakana_no.gif in Resources */ = {isa = PBXBuildFile; fileRef = C4D9CA882C1F654A00E35DDD /* katakana_no.gif */; };
+		C4D9CAE52C1F654C00E35DDD /* katakana_u.gif in Resources */ = {isa = PBXBuildFile; fileRef = C4D9CA892C1F654A00E35DDD /* katakana_u.gif */; };
+		C4D9CAE62C1F654C00E35DDD /* hiragana_ro.gif in Resources */ = {isa = PBXBuildFile; fileRef = C4D9CA8A2C1F654A00E35DDD /* hiragana_ro.gif */; };
+		C4D9CAE72C1F654C00E35DDD /* hiragana_na.gif in Resources */ = {isa = PBXBuildFile; fileRef = C4D9CA8B2C1F654A00E35DDD /* hiragana_na.gif */; };
+		C4D9CAE82C1F654C00E35DDD /* katakana_mu.gif in Resources */ = {isa = PBXBuildFile; fileRef = C4D9CA8C2C1F654A00E35DDD /* katakana_mu.gif */; };
+		C4D9CAE92C1F654C00E35DDD /* katakana_ko.gif in Resources */ = {isa = PBXBuildFile; fileRef = C4D9CA8D2C1F654B00E35DDD /* katakana_ko.gif */; };
+		C4D9CAEA2C1F654C00E35DDD /* katakana_he.gif in Resources */ = {isa = PBXBuildFile; fileRef = C4D9CA8E2C1F654B00E35DDD /* katakana_he.gif */; };
+		C4D9CAEB2C1F654C00E35DDD /* hiragana_a.gif in Resources */ = {isa = PBXBuildFile; fileRef = C4D9CA8F2C1F654B00E35DDD /* hiragana_a.gif */; };
+		C4D9CAEC2C1F654C00E35DDD /* hiragana_te.gif in Resources */ = {isa = PBXBuildFile; fileRef = C4D9CA902C1F654B00E35DDD /* hiragana_te.gif */; };
+		C4D9CAED2C1F654C00E35DDD /* hiragana_ho.gif in Resources */ = {isa = PBXBuildFile; fileRef = C4D9CA912C1F654B00E35DDD /* hiragana_ho.gif */; };
+		C4D9CAEE2C1F654C00E35DDD /* hiragana_ru.gif in Resources */ = {isa = PBXBuildFile; fileRef = C4D9CA922C1F654B00E35DDD /* hiragana_ru.gif */; };
+		C4D9CAEF2C1F654C00E35DDD /* hiragana_ki.gif in Resources */ = {isa = PBXBuildFile; fileRef = C4D9CA932C1F654B00E35DDD /* hiragana_ki.gif */; };
+		C4D9CAF02C1F654C00E35DDD /* hiragana_nu.gif in Resources */ = {isa = PBXBuildFile; fileRef = C4D9CA942C1F654B00E35DDD /* hiragana_nu.gif */; };
+		C4D9CAF12C1F654C00E35DDD /* katakana_ra.gif in Resources */ = {isa = PBXBuildFile; fileRef = C4D9CA952C1F654B00E35DDD /* katakana_ra.gif */; };
+		C4D9CAF22C1F654C00E35DDD /* katakana_so.gif in Resources */ = {isa = PBXBuildFile; fileRef = C4D9CA962C1F654B00E35DDD /* katakana_so.gif */; };
+		C4D9CAF32C1F654C00E35DDD /* katakana_na.gif in Resources */ = {isa = PBXBuildFile; fileRef = C4D9CA972C1F654B00E35DDD /* katakana_na.gif */; };
+		C4D9CAF42C1F654C00E35DDD /* katakana_ka.gif in Resources */ = {isa = PBXBuildFile; fileRef = C4D9CA982C1F654B00E35DDD /* katakana_ka.gif */; };
+		C4D9CAF52C1F654C00E35DDD /* katakana_ri.gif in Resources */ = {isa = PBXBuildFile; fileRef = C4D9CA992C1F654B00E35DDD /* katakana_ri.gif */; };
+		C4D9CAF62C1F654C00E35DDD /* katakana_yu.gif in Resources */ = {isa = PBXBuildFile; fileRef = C4D9CA9A2C1F654B00E35DDD /* katakana_yu.gif */; };
+		C4D9CAF72C1F654C00E35DDD /* katakana_ni.gif in Resources */ = {isa = PBXBuildFile; fileRef = C4D9CA9B2C1F654B00E35DDD /* katakana_ni.gif */; };
+		C4D9CAF82C1F654C00E35DDD /* hiragana_n.gif in Resources */ = {isa = PBXBuildFile; fileRef = C4D9CA9C2C1F654B00E35DDD /* hiragana_n.gif */; };
+		C4D9CAF92C1F654C00E35DDD /* katakana_i.gif in Resources */ = {isa = PBXBuildFile; fileRef = C4D9CA9D2C1F654B00E35DDD /* katakana_i.gif */; };
+		C4D9CAFA2C1F654C00E35DDD /* katakana_nu.gif in Resources */ = {isa = PBXBuildFile; fileRef = C4D9CA9E2C1F654B00E35DDD /* katakana_nu.gif */; };
+		C4D9CAFB2C1F654C00E35DDD /* hiragana_re.gif in Resources */ = {isa = PBXBuildFile; fileRef = C4D9CA9F2C1F654B00E35DDD /* hiragana_re.gif */; };
+		C4D9CAFC2C1F654C00E35DDD /* katakana_ha.gif in Resources */ = {isa = PBXBuildFile; fileRef = C4D9CAA02C1F654B00E35DDD /* katakana_ha.gif */; };
+		C4D9CAFD2C1F654C00E35DDD /* katakana_ta.gif in Resources */ = {isa = PBXBuildFile; fileRef = C4D9CAA12C1F654B00E35DDD /* katakana_ta.gif */; };
+		C4D9CAFE2C1F654C00E35DDD /* hiragana_ta.gif in Resources */ = {isa = PBXBuildFile; fileRef = C4D9CAA22C1F654B00E35DDD /* hiragana_ta.gif */; };
+		C4D9CAFF2C1F654C00E35DDD /* katakana_a.gif in Resources */ = {isa = PBXBuildFile; fileRef = C4D9CAA32C1F654B00E35DDD /* katakana_a.gif */; };
+		C4D9CB002C1F654C00E35DDD /* katakana_me.gif in Resources */ = {isa = PBXBuildFile; fileRef = C4D9CAA42C1F654B00E35DDD /* katakana_me.gif */; };
+		C4D9CB012C1F654C00E35DDD /* hiragana_shi.gif in Resources */ = {isa = PBXBuildFile; fileRef = C4D9CAA52C1F654B00E35DDD /* hiragana_shi.gif */; };
+		C4D9CB022C1F654C00E35DDD /* katakana_shi.gif in Resources */ = {isa = PBXBuildFile; fileRef = C4D9CAA62C1F654B00E35DDD /* katakana_shi.gif */; };
+		C4D9CB032C1F654C00E35DDD /* katakana_te.gif in Resources */ = {isa = PBXBuildFile; fileRef = C4D9CAA72C1F654B00E35DDD /* katakana_te.gif */; };
+		C4D9CB042C1F654C00E35DDD /* katakana_wo.gif in Resources */ = {isa = PBXBuildFile; fileRef = C4D9CAA82C1F654B00E35DDD /* katakana_wo.gif */; };
+		C4D9CB052C1F654C00E35DDD /* katakana_n.gif in Resources */ = {isa = PBXBuildFile; fileRef = C4D9CAA92C1F654B00E35DDD /* katakana_n.gif */; };
+		C4D9CB062C1F654C00E35DDD /* katakana_tsu.gif in Resources */ = {isa = PBXBuildFile; fileRef = C4D9CAAA2C1F654B00E35DDD /* katakana_tsu.gif */; };
+		C4D9CB072C1F654C00E35DDD /* katakana_o.gif in Resources */ = {isa = PBXBuildFile; fileRef = C4D9CAAB2C1F654B00E35DDD /* katakana_o.gif */; };
+		C4D9CB082C1F654C00E35DDD /* hiragana_mi.gif in Resources */ = {isa = PBXBuildFile; fileRef = C4D9CAAC2C1F654B00E35DDD /* hiragana_mi.gif */; };
+		C4D9CB092C1F654C00E35DDD /* hiragana_ke.gif in Resources */ = {isa = PBXBuildFile; fileRef = C4D9CAAD2C1F654B00E35DDD /* hiragana_ke.gif */; };
+		C4D9CB0A2C1F654C00E35DDD /* hiragana_ma.gif in Resources */ = {isa = PBXBuildFile; fileRef = C4D9CAAE2C1F654B00E35DDD /* hiragana_ma.gif */; };
+		C4D9CB0B2C1F654C00E35DDD /* katakana_ki.gif in Resources */ = {isa = PBXBuildFile; fileRef = C4D9CAAF2C1F654B00E35DDD /* katakana_ki.gif */; };
+		C4D9CB0C2C1F654C00E35DDD /* katakana_hi.gif in Resources */ = {isa = PBXBuildFile; fileRef = C4D9CAB02C1F654C00E35DDD /* katakana_hi.gif */; };
+		C4D9CB0D2C1F654C00E35DDD /* katakana_ya.gif in Resources */ = {isa = PBXBuildFile; fileRef = C4D9CAB12C1F654C00E35DDD /* katakana_ya.gif */; };
+		C4D9CB0E2C1F654C00E35DDD /* hiragana_sa.gif in Resources */ = {isa = PBXBuildFile; fileRef = C4D9CAB22C1F654C00E35DDD /* hiragana_sa.gif */; };
+		C4D9CB0F2C1F654C00E35DDD /* hiragana_wa.gif in Resources */ = {isa = PBXBuildFile; fileRef = C4D9CAB32C1F654C00E35DDD /* hiragana_wa.gif */; };
+		C4D9CB102C1F654C00E35DDD /* katakana_wa.gif in Resources */ = {isa = PBXBuildFile; fileRef = C4D9CAB42C1F654C00E35DDD /* katakana_wa.gif */; };
+		C4D9CB112C1F654C00E35DDD /* hiragana_fu.gif in Resources */ = {isa = PBXBuildFile; fileRef = C4D9CAB52C1F654C00E35DDD /* hiragana_fu.gif */; };
+		C4D9CB122C1F654C00E35DDD /* hiragana_su.gif in Resources */ = {isa = PBXBuildFile; fileRef = C4D9CAB62C1F654C00E35DDD /* hiragana_su.gif */; };
+		C4D9CB132C1F654C00E35DDD /* hiragana_ni.gif in Resources */ = {isa = PBXBuildFile; fileRef = C4D9CAB72C1F654C00E35DDD /* hiragana_ni.gif */; };
+		C4D9CB142C1F654C00E35DDD /* hiragana_u.gif in Resources */ = {isa = PBXBuildFile; fileRef = C4D9CAB82C1F654C00E35DDD /* hiragana_u.gif */; };
+		C4D9CB152C1F654C00E35DDD /* hiragana_ko.gif in Resources */ = {isa = PBXBuildFile; fileRef = C4D9CAB92C1F654C00E35DDD /* hiragana_ko.gif */; };
+		C4D9CB162C1F654C00E35DDD /* hiragana_ka.gif in Resources */ = {isa = PBXBuildFile; fileRef = C4D9CABA2C1F654C00E35DDD /* hiragana_ka.gif */; };
+		C4D9CB172C1F654C00E35DDD /* katakana_su.gif in Resources */ = {isa = PBXBuildFile; fileRef = C4D9CABB2C1F654C00E35DDD /* katakana_su.gif */; };
+		C4D9CB182C1F654C00E35DDD /* katakana_e.gif in Resources */ = {isa = PBXBuildFile; fileRef = C4D9CABC2C1F654C00E35DDD /* katakana_e.gif */; };
+		C4D9CB192C1F654C00E35DDD /* katakana_to.gif in Resources */ = {isa = PBXBuildFile; fileRef = C4D9CABD2C1F654C00E35DDD /* katakana_to.gif */; };
+		C4D9CB1A2C1F654C00E35DDD /* hiragana_wo.gif in Resources */ = {isa = PBXBuildFile; fileRef = C4D9CABE2C1F654C00E35DDD /* hiragana_wo.gif */; };
+		C4D9CB1B2C1F654C00E35DDD /* hiragana_yu.gif in Resources */ = {isa = PBXBuildFile; fileRef = C4D9CABF2C1F654C00E35DDD /* hiragana_yu.gif */; };
+		C4D9CB1C2C1F654C00E35DDD /* hiragana_o.gif in Resources */ = {isa = PBXBuildFile; fileRef = C4D9CAC02C1F654C00E35DDD /* hiragana_o.gif */; };
+		C4D9CB1D2C1F654C00E35DDD /* hiragana_mu.gif in Resources */ = {isa = PBXBuildFile; fileRef = C4D9CAC12C1F654C00E35DDD /* hiragana_mu.gif */; };
+		C4D9CB1E2C1F654C00E35DDD /* hiragana_ya.gif in Resources */ = {isa = PBXBuildFile; fileRef = C4D9CAC22C1F654C00E35DDD /* hiragana_ya.gif */; };
+		C4D9CB1F2C1F654C00E35DDD /* katakana_chi.gif in Resources */ = {isa = PBXBuildFile; fileRef = C4D9CAC32C1F654C00E35DDD /* katakana_chi.gif */; };
+		C4D9CB202C1F654C00E35DDD /* katakana_mi.gif in Resources */ = {isa = PBXBuildFile; fileRef = C4D9CAC42C1F654C00E35DDD /* katakana_mi.gif */; };
+		C4D9CB212C1F654C00E35DDD /* katakana_yo.gif in Resources */ = {isa = PBXBuildFile; fileRef = C4D9CAC52C1F654C00E35DDD /* katakana_yo.gif */; };
+		C4D9CB222C1F654C00E35DDD /* hiragana_so.gif in Resources */ = {isa = PBXBuildFile; fileRef = C4D9CAC62C1F654C00E35DDD /* hiragana_so.gif */; };
+		C4D9CB232C1F654C00E35DDD /* katakana_ho.gif in Resources */ = {isa = PBXBuildFile; fileRef = C4D9CAC72C1F654C00E35DDD /* katakana_ho.gif */; };
+		C4D9CB242C1F654C00E35DDD /* hiragana_hi.gif in Resources */ = {isa = PBXBuildFile; fileRef = C4D9CAC82C1F654C00E35DDD /* hiragana_hi.gif */; };
+		C4D9CB262C1F68CE00E35DDD /* GridItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D9CB252C1F68CE00E35DDD /* GridItemView.swift */; };
+		C4D9CB282C1F691400E35DDD /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D9CB272C1F691400E35DDD /* GridView.swift */; };
+		C4D9CB2A2C1F697B00E35DDD /* ExerciseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D9CB292C1F697B00E35DDD /* ExerciseView.swift */; };
+		C4D9CB302C1F6F1C00E35DDD /* RadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D9CB2F2C1F6F1C00E35DDD /* RadioButton.swift */; };
+		C4D9CB322C1F6F3700E35DDD /* RadioButtonGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D9CB312C1F6F3700E35DDD /* RadioButtonGroup.swift */; };
+		C4D9CB362C1F848400E35DDD /* SelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D9CB352C1F848400E35DDD /* SelectionView.swift */; };
+		C4D9CB3C2C1F9E5100E35DDD /* PopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D9CB3B2C1F9E5100E35DDD /* PopupView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C4D9C9882C1F5B7A00E35DDD /* SilabariosJapones.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SilabariosJapones.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4D9C98B2C1F5B7A00E35DDD /* SilabariosJaponesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SilabariosJaponesApp.swift; sourceTree = "<group>"; };
+		C4D9C98D2C1F5B7A00E35DDD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C4D9C98F2C1F5B7C00E35DDD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C4D9C9922C1F5B7C00E35DDD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C4D9C99B2C1F5E5E00E35DDD /* Silabarios.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Silabarios.json; sourceTree = "<group>"; };
+		C4D9C9A32C1F5F1E00E35DDD /* SilabarioViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SilabarioViewModel.swift; sourceTree = "<group>"; };
+		C4D9C9A52C1F5F2700E35DDD /* EjercicioSilabario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EjercicioSilabario.swift; sourceTree = "<group>"; };
+		C4D9C9A72C1F5F3000E35DDD /* Silaba.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Silaba.swift; sourceTree = "<group>"; };
+		C4D9C9B12C1F634C00E35DDD /* GifLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifLoader.swift; sourceTree = "<group>"; };
+		C4D9CA6B2C1F640A00E35DDD /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		C4D9CA6D2C1F654A00E35DDD /* hiragana_tsu.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = hiragana_tsu.gif; sourceTree = "<group>"; };
+		C4D9CA6E2C1F654A00E35DDD /* hiragana_ra.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = hiragana_ra.gif; sourceTree = "<group>"; };
+		C4D9CA6F2C1F654A00E35DDD /* hiragana_he.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = hiragana_he.gif; sourceTree = "<group>"; };
+		C4D9CA702C1F654A00E35DDD /* katakana_ne.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = katakana_ne.gif; sourceTree = "<group>"; };
+		C4D9CA712C1F654A00E35DDD /* katakana_ru.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = katakana_ru.gif; sourceTree = "<group>"; };
+		C4D9CA722C1F654A00E35DDD /* hiragana_mo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = hiragana_mo.gif; sourceTree = "<group>"; };
+		C4D9CA732C1F654A00E35DDD /* hiragana_se.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = hiragana_se.gif; sourceTree = "<group>"; };
+		C4D9CA742C1F654A00E35DDD /* katakana_ke.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = katakana_ke.gif; sourceTree = "<group>"; };
+		C4D9CA752C1F654A00E35DDD /* hiragana_e.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = hiragana_e.gif; sourceTree = "<group>"; };
+		C4D9CA762C1F654A00E35DDD /* katakana_ro.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = katakana_ro.gif; sourceTree = "<group>"; };
+		C4D9CA772C1F654A00E35DDD /* hiragana_i.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = hiragana_i.gif; sourceTree = "<group>"; };
+		C4D9CA782C1F654A00E35DDD /* hiragana_no.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = hiragana_no.gif; sourceTree = "<group>"; };
+		C4D9CA792C1F654A00E35DDD /* hiragana_ri.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = hiragana_ri.gif; sourceTree = "<group>"; };
+		C4D9CA7A2C1F654A00E35DDD /* hiragana_yo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = hiragana_yo.gif; sourceTree = "<group>"; };
+		C4D9CA7B2C1F654A00E35DDD /* katakana_ma.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = katakana_ma.gif; sourceTree = "<group>"; };
+		C4D9CA7C2C1F654A00E35DDD /* hiragana_ne.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = hiragana_ne.gif; sourceTree = "<group>"; };
+		C4D9CA7D2C1F654A00E35DDD /* hiragana_me.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = hiragana_me.gif; sourceTree = "<group>"; };
+		C4D9CA7E2C1F654A00E35DDD /* hiragana_chi.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = hiragana_chi.gif; sourceTree = "<group>"; };
+		C4D9CA7F2C1F654A00E35DDD /* hiragana_to.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = hiragana_to.gif; sourceTree = "<group>"; };
+		C4D9CA802C1F654A00E35DDD /* hiragana_ku.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = hiragana_ku.gif; sourceTree = "<group>"; };
+		C4D9CA812C1F654A00E35DDD /* katakana_fu.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = katakana_fu.gif; sourceTree = "<group>"; };
+		C4D9CA822C1F654A00E35DDD /* katakana_mo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = katakana_mo.gif; sourceTree = "<group>"; };
+		C4D9CA832C1F654A00E35DDD /* katakana_re.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = katakana_re.gif; sourceTree = "<group>"; };
+		C4D9CA842C1F654A00E35DDD /* hiragana_ha.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = hiragana_ha.gif; sourceTree = "<group>"; };
+		C4D9CA852C1F654A00E35DDD /* katakana_ku.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = katakana_ku.gif; sourceTree = "<group>"; };
+		C4D9CA862C1F654A00E35DDD /* katakana_sa.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = katakana_sa.gif; sourceTree = "<group>"; };
+		C4D9CA872C1F654A00E35DDD /* katakana_se.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = katakana_se.gif; sourceTree = "<group>"; };
+		C4D9CA882C1F654A00E35DDD /* katakana_no.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = katakana_no.gif; sourceTree = "<group>"; };
+		C4D9CA892C1F654A00E35DDD /* katakana_u.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = katakana_u.gif; sourceTree = "<group>"; };
+		C4D9CA8A2C1F654A00E35DDD /* hiragana_ro.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = hiragana_ro.gif; sourceTree = "<group>"; };
+		C4D9CA8B2C1F654A00E35DDD /* hiragana_na.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = hiragana_na.gif; sourceTree = "<group>"; };
+		C4D9CA8C2C1F654A00E35DDD /* katakana_mu.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = katakana_mu.gif; sourceTree = "<group>"; };
+		C4D9CA8D2C1F654B00E35DDD /* katakana_ko.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = katakana_ko.gif; sourceTree = "<group>"; };
+		C4D9CA8E2C1F654B00E35DDD /* katakana_he.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = katakana_he.gif; sourceTree = "<group>"; };
+		C4D9CA8F2C1F654B00E35DDD /* hiragana_a.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = hiragana_a.gif; sourceTree = "<group>"; };
+		C4D9CA902C1F654B00E35DDD /* hiragana_te.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = hiragana_te.gif; sourceTree = "<group>"; };
+		C4D9CA912C1F654B00E35DDD /* hiragana_ho.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = hiragana_ho.gif; sourceTree = "<group>"; };
+		C4D9CA922C1F654B00E35DDD /* hiragana_ru.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = hiragana_ru.gif; sourceTree = "<group>"; };
+		C4D9CA932C1F654B00E35DDD /* hiragana_ki.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = hiragana_ki.gif; sourceTree = "<group>"; };
+		C4D9CA942C1F654B00E35DDD /* hiragana_nu.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = hiragana_nu.gif; sourceTree = "<group>"; };
+		C4D9CA952C1F654B00E35DDD /* katakana_ra.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = katakana_ra.gif; sourceTree = "<group>"; };
+		C4D9CA962C1F654B00E35DDD /* katakana_so.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = katakana_so.gif; sourceTree = "<group>"; };
+		C4D9CA972C1F654B00E35DDD /* katakana_na.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = katakana_na.gif; sourceTree = "<group>"; };
+		C4D9CA982C1F654B00E35DDD /* katakana_ka.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = katakana_ka.gif; sourceTree = "<group>"; };
+		C4D9CA992C1F654B00E35DDD /* katakana_ri.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = katakana_ri.gif; sourceTree = "<group>"; };
+		C4D9CA9A2C1F654B00E35DDD /* katakana_yu.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = katakana_yu.gif; sourceTree = "<group>"; };
+		C4D9CA9B2C1F654B00E35DDD /* katakana_ni.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = katakana_ni.gif; sourceTree = "<group>"; };
+		C4D9CA9C2C1F654B00E35DDD /* hiragana_n.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = hiragana_n.gif; sourceTree = "<group>"; };
+		C4D9CA9D2C1F654B00E35DDD /* katakana_i.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = katakana_i.gif; sourceTree = "<group>"; };
+		C4D9CA9E2C1F654B00E35DDD /* katakana_nu.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = katakana_nu.gif; sourceTree = "<group>"; };
+		C4D9CA9F2C1F654B00E35DDD /* hiragana_re.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = hiragana_re.gif; sourceTree = "<group>"; };
+		C4D9CAA02C1F654B00E35DDD /* katakana_ha.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = katakana_ha.gif; sourceTree = "<group>"; };
+		C4D9CAA12C1F654B00E35DDD /* katakana_ta.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = katakana_ta.gif; sourceTree = "<group>"; };
+		C4D9CAA22C1F654B00E35DDD /* hiragana_ta.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = hiragana_ta.gif; sourceTree = "<group>"; };
+		C4D9CAA32C1F654B00E35DDD /* katakana_a.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = katakana_a.gif; sourceTree = "<group>"; };
+		C4D9CAA42C1F654B00E35DDD /* katakana_me.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = katakana_me.gif; sourceTree = "<group>"; };
+		C4D9CAA52C1F654B00E35DDD /* hiragana_shi.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = hiragana_shi.gif; sourceTree = "<group>"; };
+		C4D9CAA62C1F654B00E35DDD /* katakana_shi.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = katakana_shi.gif; sourceTree = "<group>"; };
+		C4D9CAA72C1F654B00E35DDD /* katakana_te.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = katakana_te.gif; sourceTree = "<group>"; };
+		C4D9CAA82C1F654B00E35DDD /* katakana_wo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = katakana_wo.gif; sourceTree = "<group>"; };
+		C4D9CAA92C1F654B00E35DDD /* katakana_n.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = katakana_n.gif; sourceTree = "<group>"; };
+		C4D9CAAA2C1F654B00E35DDD /* katakana_tsu.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = katakana_tsu.gif; sourceTree = "<group>"; };
+		C4D9CAAB2C1F654B00E35DDD /* katakana_o.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = katakana_o.gif; sourceTree = "<group>"; };
+		C4D9CAAC2C1F654B00E35DDD /* hiragana_mi.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = hiragana_mi.gif; sourceTree = "<group>"; };
+		C4D9CAAD2C1F654B00E35DDD /* hiragana_ke.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = hiragana_ke.gif; sourceTree = "<group>"; };
+		C4D9CAAE2C1F654B00E35DDD /* hiragana_ma.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = hiragana_ma.gif; sourceTree = "<group>"; };
+		C4D9CAAF2C1F654B00E35DDD /* katakana_ki.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = katakana_ki.gif; sourceTree = "<group>"; };
+		C4D9CAB02C1F654C00E35DDD /* katakana_hi.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = katakana_hi.gif; sourceTree = "<group>"; };
+		C4D9CAB12C1F654C00E35DDD /* katakana_ya.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = katakana_ya.gif; sourceTree = "<group>"; };
+		C4D9CAB22C1F654C00E35DDD /* hiragana_sa.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = hiragana_sa.gif; sourceTree = "<group>"; };
+		C4D9CAB32C1F654C00E35DDD /* hiragana_wa.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = hiragana_wa.gif; sourceTree = "<group>"; };
+		C4D9CAB42C1F654C00E35DDD /* katakana_wa.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = katakana_wa.gif; sourceTree = "<group>"; };
+		C4D9CAB52C1F654C00E35DDD /* hiragana_fu.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = hiragana_fu.gif; sourceTree = "<group>"; };
+		C4D9CAB62C1F654C00E35DDD /* hiragana_su.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = hiragana_su.gif; sourceTree = "<group>"; };
+		C4D9CAB72C1F654C00E35DDD /* hiragana_ni.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = hiragana_ni.gif; sourceTree = "<group>"; };
+		C4D9CAB82C1F654C00E35DDD /* hiragana_u.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = hiragana_u.gif; sourceTree = "<group>"; };
+		C4D9CAB92C1F654C00E35DDD /* hiragana_ko.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = hiragana_ko.gif; sourceTree = "<group>"; };
+		C4D9CABA2C1F654C00E35DDD /* hiragana_ka.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = hiragana_ka.gif; sourceTree = "<group>"; };
+		C4D9CABB2C1F654C00E35DDD /* katakana_su.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = katakana_su.gif; sourceTree = "<group>"; };
+		C4D9CABC2C1F654C00E35DDD /* katakana_e.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = katakana_e.gif; sourceTree = "<group>"; };
+		C4D9CABD2C1F654C00E35DDD /* katakana_to.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = katakana_to.gif; sourceTree = "<group>"; };
+		C4D9CABE2C1F654C00E35DDD /* hiragana_wo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = hiragana_wo.gif; sourceTree = "<group>"; };
+		C4D9CABF2C1F654C00E35DDD /* hiragana_yu.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = hiragana_yu.gif; sourceTree = "<group>"; };
+		C4D9CAC02C1F654C00E35DDD /* hiragana_o.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = hiragana_o.gif; sourceTree = "<group>"; };
+		C4D9CAC12C1F654C00E35DDD /* hiragana_mu.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = hiragana_mu.gif; sourceTree = "<group>"; };
+		C4D9CAC22C1F654C00E35DDD /* hiragana_ya.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = hiragana_ya.gif; sourceTree = "<group>"; };
+		C4D9CAC32C1F654C00E35DDD /* katakana_chi.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = katakana_chi.gif; sourceTree = "<group>"; };
+		C4D9CAC42C1F654C00E35DDD /* katakana_mi.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = katakana_mi.gif; sourceTree = "<group>"; };
+		C4D9CAC52C1F654C00E35DDD /* katakana_yo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = katakana_yo.gif; sourceTree = "<group>"; };
+		C4D9CAC62C1F654C00E35DDD /* hiragana_so.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = hiragana_so.gif; sourceTree = "<group>"; };
+		C4D9CAC72C1F654C00E35DDD /* katakana_ho.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = katakana_ho.gif; sourceTree = "<group>"; };
+		C4D9CAC82C1F654C00E35DDD /* hiragana_hi.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = hiragana_hi.gif; sourceTree = "<group>"; };
+		C4D9CB252C1F68CE00E35DDD /* GridItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridItemView.swift; sourceTree = "<group>"; };
+		C4D9CB272C1F691400E35DDD /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
+		C4D9CB292C1F697B00E35DDD /* ExerciseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseView.swift; sourceTree = "<group>"; };
+		C4D9CB2F2C1F6F1C00E35DDD /* RadioButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioButton.swift; sourceTree = "<group>"; };
+		C4D9CB312C1F6F3700E35DDD /* RadioButtonGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioButtonGroup.swift; sourceTree = "<group>"; };
+		C4D9CB352C1F848400E35DDD /* SelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionView.swift; sourceTree = "<group>"; };
+		C4D9CB3B2C1F9E5100E35DDD /* PopupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C4D9C9852C1F5B7A00E35DDD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C4D9C97F2C1F5B7A00E35DDD = {
+			isa = PBXGroup;
+			children = (
+				C4D9C98A2C1F5B7A00E35DDD /* SilabariosJapones */,
+				C4D9C9892C1F5B7A00E35DDD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C4D9C9892C1F5B7A00E35DDD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C4D9C9882C1F5B7A00E35DDD /* SilabariosJapones.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C4D9C98A2C1F5B7A00E35DDD /* SilabariosJapones */ = {
+			isa = PBXGroup;
+			children = (
+				C4D9C9A02C1F5EFC00E35DDD /* Utils */,
+				C4D9C99F2C1F5EF600E35DDD /* ViewModel */,
+				C4D9C99E2C1F5EEF00E35DDD /* View */,
+				C4D9C99D2C1F5EE700E35DDD /* Model */,
+				C4D9C98B2C1F5B7A00E35DDD /* SilabariosJaponesApp.swift */,
+				C4D9C98D2C1F5B7A00E35DDD /* ContentView.swift */,
+				C4D9C98F2C1F5B7C00E35DDD /* Assets.xcassets */,
+				C4D9C9A92C1F5F3700E35DDD /* Resources */,
+				C4D9C9912C1F5B7C00E35DDD /* Preview Content */,
+			);
+			path = SilabariosJapones;
+			sourceTree = "<group>";
+		};
+		C4D9C9912C1F5B7C00E35DDD /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C4D9C9922C1F5B7C00E35DDD /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C4D9C99D2C1F5EE700E35DDD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C4D9C9A52C1F5F2700E35DDD /* EjercicioSilabario.swift */,
+				C4D9C9A72C1F5F3000E35DDD /* Silaba.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C4D9C99E2C1F5EEF00E35DDD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C4D9CB252C1F68CE00E35DDD /* GridItemView.swift */,
+				C4D9CB272C1F691400E35DDD /* GridView.swift */,
+				C4D9CB292C1F697B00E35DDD /* ExerciseView.swift */,
+				C4D9CB2F2C1F6F1C00E35DDD /* RadioButton.swift */,
+				C4D9CB312C1F6F3700E35DDD /* RadioButtonGroup.swift */,
+				C4D9CB352C1F848400E35DDD /* SelectionView.swift */,
+				C4D9CB3B2C1F9E5100E35DDD /* PopupView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C4D9C99F2C1F5EF600E35DDD /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C4D9C9A32C1F5F1E00E35DDD /* SilabarioViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C4D9C9A02C1F5EFC00E35DDD /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				C4D9C9B12C1F634C00E35DDD /* GifLoader.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		C4D9C9A92C1F5F3700E35DDD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C4D9CA6B2C1F640A00E35DDD /* logo.png */,
+				C4D9C99B2C1F5E5E00E35DDD /* Silabarios.json */,
+				C4D9C9AA2C1F5F3E00E35DDD /* Images */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C4D9C9AA2C1F5F3E00E35DDD /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				C4D9CA8F2C1F654B00E35DDD /* hiragana_a.gif */,
+				C4D9CA7E2C1F654A00E35DDD /* hiragana_chi.gif */,
+				C4D9CA752C1F654A00E35DDD /* hiragana_e.gif */,
+				C4D9CAB52C1F654C00E35DDD /* hiragana_fu.gif */,
+				C4D9CA842C1F654A00E35DDD /* hiragana_ha.gif */,
+				C4D9CA6F2C1F654A00E35DDD /* hiragana_he.gif */,
+				C4D9CAC82C1F654C00E35DDD /* hiragana_hi.gif */,
+				C4D9CA912C1F654B00E35DDD /* hiragana_ho.gif */,
+				C4D9CA772C1F654A00E35DDD /* hiragana_i.gif */,
+				C4D9CABA2C1F654C00E35DDD /* hiragana_ka.gif */,
+				C4D9CAAD2C1F654B00E35DDD /* hiragana_ke.gif */,
+				C4D9CA932C1F654B00E35DDD /* hiragana_ki.gif */,
+				C4D9CAB92C1F654C00E35DDD /* hiragana_ko.gif */,
+				C4D9CA802C1F654A00E35DDD /* hiragana_ku.gif */,
+				C4D9CAAE2C1F654B00E35DDD /* hiragana_ma.gif */,
+				C4D9CA7D2C1F654A00E35DDD /* hiragana_me.gif */,
+				C4D9CAAC2C1F654B00E35DDD /* hiragana_mi.gif */,
+				C4D9CA722C1F654A00E35DDD /* hiragana_mo.gif */,
+				C4D9CAC12C1F654C00E35DDD /* hiragana_mu.gif */,
+				C4D9CA9C2C1F654B00E35DDD /* hiragana_n.gif */,
+				C4D9CA8B2C1F654A00E35DDD /* hiragana_na.gif */,
+				C4D9CA7C2C1F654A00E35DDD /* hiragana_ne.gif */,
+				C4D9CAB72C1F654C00E35DDD /* hiragana_ni.gif */,
+				C4D9CA782C1F654A00E35DDD /* hiragana_no.gif */,
+				C4D9CA942C1F654B00E35DDD /* hiragana_nu.gif */,
+				C4D9CAC02C1F654C00E35DDD /* hiragana_o.gif */,
+				C4D9CA6E2C1F654A00E35DDD /* hiragana_ra.gif */,
+				C4D9CA9F2C1F654B00E35DDD /* hiragana_re.gif */,
+				C4D9CA792C1F654A00E35DDD /* hiragana_ri.gif */,
+				C4D9CA8A2C1F654A00E35DDD /* hiragana_ro.gif */,
+				C4D9CA922C1F654B00E35DDD /* hiragana_ru.gif */,
+				C4D9CAB22C1F654C00E35DDD /* hiragana_sa.gif */,
+				C4D9CA732C1F654A00E35DDD /* hiragana_se.gif */,
+				C4D9CAA52C1F654B00E35DDD /* hiragana_shi.gif */,
+				C4D9CAC62C1F654C00E35DDD /* hiragana_so.gif */,
+				C4D9CAB62C1F654C00E35DDD /* hiragana_su.gif */,
+				C4D9CAA22C1F654B00E35DDD /* hiragana_ta.gif */,
+				C4D9CA902C1F654B00E35DDD /* hiragana_te.gif */,
+				C4D9CA7F2C1F654A00E35DDD /* hiragana_to.gif */,
+				C4D9CA6D2C1F654A00E35DDD /* hiragana_tsu.gif */,
+				C4D9CAB82C1F654C00E35DDD /* hiragana_u.gif */,
+				C4D9CAB32C1F654C00E35DDD /* hiragana_wa.gif */,
+				C4D9CABE2C1F654C00E35DDD /* hiragana_wo.gif */,
+				C4D9CAC22C1F654C00E35DDD /* hiragana_ya.gif */,
+				C4D9CA7A2C1F654A00E35DDD /* hiragana_yo.gif */,
+				C4D9CABF2C1F654C00E35DDD /* hiragana_yu.gif */,
+				C4D9CAA32C1F654B00E35DDD /* katakana_a.gif */,
+				C4D9CAC32C1F654C00E35DDD /* katakana_chi.gif */,
+				C4D9CABC2C1F654C00E35DDD /* katakana_e.gif */,
+				C4D9CA812C1F654A00E35DDD /* katakana_fu.gif */,
+				C4D9CAA02C1F654B00E35DDD /* katakana_ha.gif */,
+				C4D9CA8E2C1F654B00E35DDD /* katakana_he.gif */,
+				C4D9CAB02C1F654C00E35DDD /* katakana_hi.gif */,
+				C4D9CAC72C1F654C00E35DDD /* katakana_ho.gif */,
+				C4D9CA9D2C1F654B00E35DDD /* katakana_i.gif */,
+				C4D9CA982C1F654B00E35DDD /* katakana_ka.gif */,
+				C4D9CA742C1F654A00E35DDD /* katakana_ke.gif */,
+				C4D9CAAF2C1F654B00E35DDD /* katakana_ki.gif */,
+				C4D9CA8D2C1F654B00E35DDD /* katakana_ko.gif */,
+				C4D9CA852C1F654A00E35DDD /* katakana_ku.gif */,
+				C4D9CA7B2C1F654A00E35DDD /* katakana_ma.gif */,
+				C4D9CAA42C1F654B00E35DDD /* katakana_me.gif */,
+				C4D9CAC42C1F654C00E35DDD /* katakana_mi.gif */,
+				C4D9CA822C1F654A00E35DDD /* katakana_mo.gif */,
+				C4D9CA8C2C1F654A00E35DDD /* katakana_mu.gif */,
+				C4D9CAA92C1F654B00E35DDD /* katakana_n.gif */,
+				C4D9CA972C1F654B00E35DDD /* katakana_na.gif */,
+				C4D9CA702C1F654A00E35DDD /* katakana_ne.gif */,
+				C4D9CA9B2C1F654B00E35DDD /* katakana_ni.gif */,
+				C4D9CA882C1F654A00E35DDD /* katakana_no.gif */,
+				C4D9CA9E2C1F654B00E35DDD /* katakana_nu.gif */,
+				C4D9CAAB2C1F654B00E35DDD /* katakana_o.gif */,
+				C4D9CA952C1F654B00E35DDD /* katakana_ra.gif */,
+				C4D9CA832C1F654A00E35DDD /* katakana_re.gif */,
+				C4D9CA992C1F654B00E35DDD /* katakana_ri.gif */,
+				C4D9CA762C1F654A00E35DDD /* katakana_ro.gif */,
+				C4D9CA712C1F654A00E35DDD /* katakana_ru.gif */,
+				C4D9CA862C1F654A00E35DDD /* katakana_sa.gif */,
+				C4D9CA872C1F654A00E35DDD /* katakana_se.gif */,
+				C4D9CAA62C1F654B00E35DDD /* katakana_shi.gif */,
+				C4D9CA962C1F654B00E35DDD /* katakana_so.gif */,
+				C4D9CABB2C1F654C00E35DDD /* katakana_su.gif */,
+				C4D9CAA12C1F654B00E35DDD /* katakana_ta.gif */,
+				C4D9CAA72C1F654B00E35DDD /* katakana_te.gif */,
+				C4D9CABD2C1F654C00E35DDD /* katakana_to.gif */,
+				C4D9CAAA2C1F654B00E35DDD /* katakana_tsu.gif */,
+				C4D9CA892C1F654A00E35DDD /* katakana_u.gif */,
+				C4D9CAB42C1F654C00E35DDD /* katakana_wa.gif */,
+				C4D9CAA82C1F654B00E35DDD /* katakana_wo.gif */,
+				C4D9CAB12C1F654C00E35DDD /* katakana_ya.gif */,
+				C4D9CAC52C1F654C00E35DDD /* katakana_yo.gif */,
+				C4D9CA9A2C1F654B00E35DDD /* katakana_yu.gif */,
+			);
+			name = Images;
+			path = SilabariosJapones/Resources/Images;
+			sourceTree = SOURCE_ROOT;
+			usesTabs = 0;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C4D9C9872C1F5B7A00E35DDD /* SilabariosJapones */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4D9C9962C1F5B7C00E35DDD /* Build configuration list for PBXNativeTarget "SilabariosJapones" */;
+			buildPhases = (
+				C4D9C9842C1F5B7A00E35DDD /* Sources */,
+				C4D9C9852C1F5B7A00E35DDD /* Frameworks */,
+				C4D9C9862C1F5B7A00E35DDD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SilabariosJapones;
+			productName = SilabariosJapones;
+			productReference = C4D9C9882C1F5B7A00E35DDD /* SilabariosJapones.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C4D9C9802C1F5B7A00E35DDD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					C4D9C9872C1F5B7A00E35DDD = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = C4D9C9832C1F5B7A00E35DDD /* Build configuration list for PBXProject "SilabariosJapones" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C4D9C97F2C1F5B7A00E35DDD;
+			productRefGroup = C4D9C9892C1F5B7A00E35DDD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C4D9C9872C1F5B7A00E35DDD /* SilabariosJapones */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C4D9C9862C1F5B7A00E35DDD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4D9CAE32C1F654C00E35DDD /* katakana_se.gif in Resources */,
+				C4D9CB052C1F654C00E35DDD /* katakana_n.gif in Resources */,
+				C4D9CACB2C1F654C00E35DDD /* hiragana_he.gif in Resources */,
+				C4D9CAED2C1F654C00E35DDD /* hiragana_ho.gif in Resources */,
+				C4D9CACC2C1F654C00E35DDD /* katakana_ne.gif in Resources */,
+				C4D9CAF22C1F654C00E35DDD /* katakana_so.gif in Resources */,
+				C4D9CB1D2C1F654C00E35DDD /* hiragana_mu.gif in Resources */,
+				C4D9CAF12C1F654C00E35DDD /* katakana_ra.gif in Resources */,
+				C4D9CB0A2C1F654C00E35DDD /* hiragana_ma.gif in Resources */,
+				C4D9CAF52C1F654C00E35DDD /* katakana_ri.gif in Resources */,
+				C4D9CAD32C1F654C00E35DDD /* hiragana_i.gif in Resources */,
+				C4D9CB182C1F654C00E35DDD /* katakana_e.gif in Resources */,
+				C4D9CAE82C1F654C00E35DDD /* katakana_mu.gif in Resources */,
+				C4D9CADD2C1F654C00E35DDD /* katakana_fu.gif in Resources */,
+				C4D9CAF82C1F654C00E35DDD /* hiragana_n.gif in Resources */,
+				C4D9CACF2C1F654C00E35DDD /* hiragana_se.gif in Resources */,
+				C4D9CAF42C1F654C00E35DDD /* katakana_ka.gif in Resources */,
+				C4D9CAFB2C1F654C00E35DDD /* hiragana_re.gif in Resources */,
+				C4D9CAEF2C1F654C00E35DDD /* hiragana_ki.gif in Resources */,
+				C4D9CB1F2C1F654C00E35DDD /* katakana_chi.gif in Resources */,
+				C4D9CB142C1F654C00E35DDD /* hiragana_u.gif in Resources */,
+				C4D9CACA2C1F654C00E35DDD /* hiragana_ra.gif in Resources */,
+				C4D9CAFD2C1F654C00E35DDD /* katakana_ta.gif in Resources */,
+				C4D9CADB2C1F654C00E35DDD /* hiragana_to.gif in Resources */,
+				C4D9CACE2C1F654C00E35DDD /* hiragana_mo.gif in Resources */,
+				C4D9CAEB2C1F654C00E35DDD /* hiragana_a.gif in Resources */,
+				C4D9CB0D2C1F654C00E35DDD /* katakana_ya.gif in Resources */,
+				C4D9CAEE2C1F654C00E35DDD /* hiragana_ru.gif in Resources */,
+				C4D9CB112C1F654C00E35DDD /* hiragana_fu.gif in Resources */,
+				C4D9CAE92C1F654C00E35DDD /* katakana_ko.gif in Resources */,
+				C4D9CB242C1F654C00E35DDD /* hiragana_hi.gif in Resources */,
+				C4D9CB0E2C1F654C00E35DDD /* hiragana_sa.gif in Resources */,
+				C4D9CAD12C1F654C00E35DDD /* hiragana_e.gif in Resources */,
+				C4D9CB0F2C1F654C00E35DDD /* hiragana_wa.gif in Resources */,
+				C4D9C99C2C1F5E5E00E35DDD /* Silabarios.json in Resources */,
+				C4D9CB1E2C1F654C00E35DDD /* hiragana_ya.gif in Resources */,
+				C4D9CAEC2C1F654C00E35DDD /* hiragana_te.gif in Resources */,
+				C4D9CB1A2C1F654C00E35DDD /* hiragana_wo.gif in Resources */,
+				C4D9CAE42C1F654C00E35DDD /* katakana_no.gif in Resources */,
+				C4D9CB132C1F654C00E35DDD /* hiragana_ni.gif in Resources */,
+				C4D9CAF92C1F654C00E35DDD /* katakana_i.gif in Resources */,
+				C4D9CADA2C1F654C00E35DDD /* hiragana_chi.gif in Resources */,
+				C4D9CB062C1F654C00E35DDD /* katakana_tsu.gif in Resources */,
+				C4D9CB0C2C1F654C00E35DDD /* katakana_hi.gif in Resources */,
+				C4D9CACD2C1F654C00E35DDD /* katakana_ru.gif in Resources */,
+				C4D9CB082C1F654C00E35DDD /* hiragana_mi.gif in Resources */,
+				C4D9CAD92C1F654C00E35DDD /* hiragana_me.gif in Resources */,
+				C4D9CB102C1F654C00E35DDD /* katakana_wa.gif in Resources */,
+				C4D9CAF32C1F654C00E35DDD /* katakana_na.gif in Resources */,
+				C4D9CADF2C1F654C00E35DDD /* katakana_re.gif in Resources */,
+				C4D9CB212C1F654C00E35DDD /* katakana_yo.gif in Resources */,
+				C4D9CAD72C1F654C00E35DDD /* katakana_ma.gif in Resources */,
+				C4D9CAF02C1F654C00E35DDD /* hiragana_nu.gif in Resources */,
+				C4D9CAF62C1F654C00E35DDD /* katakana_yu.gif in Resources */,
+				C4D9CB0B2C1F654C00E35DDD /* katakana_ki.gif in Resources */,
+				C4D9C9932C1F5B7C00E35DDD /* Preview Assets.xcassets in Resources */,
+				C4D9CAD42C1F654C00E35DDD /* hiragana_no.gif in Resources */,
+				C4D9CAD22C1F654C00E35DDD /* katakana_ro.gif in Resources */,
+				C4D9CB222C1F654C00E35DDD /* hiragana_so.gif in Resources */,
+				C4D9CB012C1F654C00E35DDD /* hiragana_shi.gif in Resources */,
+				C4D9CB1B2C1F654C00E35DDD /* hiragana_yu.gif in Resources */,
+				C4D9CAE72C1F654C00E35DDD /* hiragana_na.gif in Resources */,
+				C4D9CAC92C1F654C00E35DDD /* hiragana_tsu.gif in Resources */,
+				C4D9CB002C1F654C00E35DDD /* katakana_me.gif in Resources */,
+				C4D9CB192C1F654C00E35DDD /* katakana_to.gif in Resources */,
+				C4D9CAE52C1F654C00E35DDD /* katakana_u.gif in Resources */,
+				C4D9CA6C2C1F640A00E35DDD /* logo.png in Resources */,
+				C4D9CAD02C1F654C00E35DDD /* katakana_ke.gif in Resources */,
+				C4D9CB072C1F654C00E35DDD /* katakana_o.gif in Resources */,
+				C4D9CAE62C1F654C00E35DDD /* hiragana_ro.gif in Resources */,
+				C4D9CAE12C1F654C00E35DDD /* katakana_ku.gif in Resources */,
+				C4D9CB232C1F654C00E35DDD /* katakana_ho.gif in Resources */,
+				C4D9CB092C1F654C00E35DDD /* hiragana_ke.gif in Resources */,
+				C4D9CAE22C1F654C00E35DDD /* katakana_sa.gif in Resources */,
+				C4D9CAD82C1F654C00E35DDD /* hiragana_ne.gif in Resources */,
+				C4D9CAEA2C1F654C00E35DDD /* katakana_he.gif in Resources */,
+				C4D9CB162C1F654C00E35DDD /* hiragana_ka.gif in Resources */,
+				C4D9CAFC2C1F654C00E35DDD /* katakana_ha.gif in Resources */,
+				C4D9CB022C1F654C00E35DDD /* katakana_shi.gif in Resources */,
+				C4D9CB042C1F654C00E35DDD /* katakana_wo.gif in Resources */,
+				C4D9CAFF2C1F654C00E35DDD /* katakana_a.gif in Resources */,
+				C4D9CAD62C1F654C00E35DDD /* hiragana_yo.gif in Resources */,
+				C4D9CADC2C1F654C00E35DDD /* hiragana_ku.gif in Resources */,
+				C4D9C9902C1F5B7C00E35DDD /* Assets.xcassets in Resources */,
+				C4D9CAFA2C1F654C00E35DDD /* katakana_nu.gif in Resources */,
+				C4D9CADE2C1F654C00E35DDD /* katakana_mo.gif in Resources */,
+				C4D9CB032C1F654C00E35DDD /* katakana_te.gif in Resources */,
+				C4D9CAFE2C1F654C00E35DDD /* hiragana_ta.gif in Resources */,
+				C4D9CB202C1F654C00E35DDD /* katakana_mi.gif in Resources */,
+				C4D9CB172C1F654C00E35DDD /* katakana_su.gif in Resources */,
+				C4D9CAE02C1F654C00E35DDD /* hiragana_ha.gif in Resources */,
+				C4D9CB1C2C1F654C00E35DDD /* hiragana_o.gif in Resources */,
+				C4D9CB122C1F654C00E35DDD /* hiragana_su.gif in Resources */,
+				C4D9CB152C1F654C00E35DDD /* hiragana_ko.gif in Resources */,
+				C4D9CAF72C1F654C00E35DDD /* katakana_ni.gif in Resources */,
+				C4D9CAD52C1F654C00E35DDD /* hiragana_ri.gif in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C4D9C9842C1F5B7A00E35DDD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4D9CB302C1F6F1C00E35DDD /* RadioButton.swift in Sources */,
+				C4D9CB362C1F848400E35DDD /* SelectionView.swift in Sources */,
+				C4D9C9B22C1F634C00E35DDD /* GifLoader.swift in Sources */,
+				C4D9C9A62C1F5F2700E35DDD /* EjercicioSilabario.swift in Sources */,
+				C4D9C98E2C1F5B7A00E35DDD /* ContentView.swift in Sources */,
+				C4D9C9A42C1F5F1E00E35DDD /* SilabarioViewModel.swift in Sources */,
+				C4D9CB3C2C1F9E5100E35DDD /* PopupView.swift in Sources */,
+				C4D9CB2A2C1F697B00E35DDD /* ExerciseView.swift in Sources */,
+				C4D9C9A82C1F5F3000E35DDD /* Silaba.swift in Sources */,
+				C4D9CB262C1F68CE00E35DDD /* GridItemView.swift in Sources */,
+				C4D9C98C2C1F5B7A00E35DDD /* SilabariosJaponesApp.swift in Sources */,
+				C4D9CB322C1F6F3700E35DDD /* RadioButtonGroup.swift in Sources */,
+				C4D9CB282C1F691400E35DDD /* GridView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C4D9C9942C1F5B7C00E35DDD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C4D9C9952C1F5B7C00E35DDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C4D9C9972C1F5B7C00E35DDD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SilabariosJapones/Preview Content\"";
+				DEVELOPMENT_TEAM = J6AHLMANDZ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Nihon GO - Silabarios";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jgomez.SilabariosJapones;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C4D9C9982C1F5B7C00E35DDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SilabariosJapones/Preview Content\"";
+				DEVELOPMENT_TEAM = J6AHLMANDZ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Nihon GO - Silabarios";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jgomez.SilabariosJapones;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C4D9C9832C1F5B7A00E35DDD /* Build configuration list for PBXProject "SilabariosJapones" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4D9C9942C1F5B7C00E35DDD /* Debug */,
+				C4D9C9952C1F5B7C00E35DDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C4D9C9962C1F5B7C00E35DDD /* Build configuration list for PBXNativeTarget "SilabariosJapones" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4D9C9972C1F5B7C00E35DDD /* Debug */,
+				C4D9C9982C1F5B7C00E35DDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C4D9C9802C1F5B7A00E35DDD /* Project object */;
+}
