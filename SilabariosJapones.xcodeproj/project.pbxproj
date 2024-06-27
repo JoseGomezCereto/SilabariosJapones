@@ -13,7 +13,7 @@
 		C4D9C9932C1F5B7C00E35DDD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4D9C9922C1F5B7C00E35DDD /* Preview Assets.xcassets */; };
 		C4D9C99C2C1F5E5E00E35DDD /* Silabarios.json in Resources */ = {isa = PBXBuildFile; fileRef = C4D9C99B2C1F5E5E00E35DDD /* Silabarios.json */; };
 		C4D9C9A42C1F5F1E00E35DDD /* SilabarioViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D9C9A32C1F5F1E00E35DDD /* SilabarioViewModel.swift */; };
-		C4D9C9A62C1F5F2700E35DDD /* EjercicioSilabario.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D9C9A52C1F5F2700E35DDD /* EjercicioSilabario.swift */; };
+		C4D9C9A62C1F5F2700E35DDD /* Ejercicio.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D9C9A52C1F5F2700E35DDD /* Ejercicio.swift */; };
 		C4D9C9A82C1F5F3000E35DDD /* Silaba.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D9C9A72C1F5F3000E35DDD /* Silaba.swift */; };
 		C4D9C9B22C1F634C00E35DDD /* GifLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D9C9B12C1F634C00E35DDD /* GifLoader.swift */; };
 		C4D9CA6C2C1F640A00E35DDD /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = C4D9CA6B2C1F640A00E35DDD /* logo.png */; };
@@ -126,7 +126,7 @@
 		C4D9C9922C1F5B7C00E35DDD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C4D9C99B2C1F5E5E00E35DDD /* Silabarios.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Silabarios.json; sourceTree = "<group>"; };
 		C4D9C9A32C1F5F1E00E35DDD /* SilabarioViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SilabarioViewModel.swift; sourceTree = "<group>"; };
-		C4D9C9A52C1F5F2700E35DDD /* EjercicioSilabario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EjercicioSilabario.swift; sourceTree = "<group>"; };
+		C4D9C9A52C1F5F2700E35DDD /* Ejercicio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ejercicio.swift; sourceTree = "<group>"; };
 		C4D9C9A72C1F5F3000E35DDD /* Silaba.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Silaba.swift; sourceTree = "<group>"; };
 		C4D9C9B12C1F634C00E35DDD /* GifLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifLoader.swift; sourceTree = "<group>"; };
 		C4D9CA6B2C1F640A00E35DDD /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
@@ -285,7 +285,7 @@
 		C4D9C99D2C1F5EE700E35DDD /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				C4D9C9A52C1F5F2700E35DDD /* EjercicioSilabario.swift */,
+				C4D9C9A52C1F5F2700E35DDD /* Ejercicio.swift */,
 				C4D9C9A72C1F5F3000E35DDD /* Silaba.swift */,
 			);
 			path = Model;
@@ -599,7 +599,7 @@
 				C4D9CB302C1F6F1C00E35DDD /* RadioButton.swift in Sources */,
 				C4D9CB362C1F848400E35DDD /* SelectionView.swift in Sources */,
 				C4D9C9B22C1F634C00E35DDD /* GifLoader.swift in Sources */,
-				C4D9C9A62C1F5F2700E35DDD /* EjercicioSilabario.swift in Sources */,
+				C4D9C9A62C1F5F2700E35DDD /* Ejercicio.swift in Sources */,
 				C4D9C98E2C1F5B7A00E35DDD /* ContentView.swift in Sources */,
 				C4D9C9A42C1F5F1E00E35DDD /* SilabarioViewModel.swift in Sources */,
 				C4D9CB3C2C1F9E5100E35DDD /* PopupView.swift in Sources */,
